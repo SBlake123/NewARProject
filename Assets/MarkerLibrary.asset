@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: MarkerLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5176797238131613637
+  m_GuidHigh: 1616650238134882186
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5534187201618000866
+      m_GuidHigh: 2378202899684807321
+    m_SerializedTextureGuid:
+      m_GuidLow: 1127231969897222297
+      m_GuidHigh: 7679284630482055339
+    m_Size: {x: 1, y: 1.1172414}
+    m_SpecifySize: 1
+    m_Name: MEWTWO
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5732809285351867818
+      m_GuidHigh: 14661485536294226092
+    m_SerializedTextureGuid:
+      m_GuidLow: 2023416063568459109
+      m_GuidHigh: 15261288315245807834
+    m_Size: {x: 1, y: 1.0806452}
+    m_SpecifySize: 1
+    m_Name: PIKACHU
+    m_Texture: {fileID: 0}
