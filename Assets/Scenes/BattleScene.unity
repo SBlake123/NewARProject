@@ -311,12 +311,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPokemons: []
-  captureManager: {fileID: 433475159}
   buttons:
   - {fileID: 501293400}
   - {fileID: 1088665582}
   - {fileID: 2123618880}
   - {fileID: 1741873166}
+  captureManager: {fileID: 433475159}
 --- !u!1 &49339959
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,7 +1622,6 @@ MonoBehaviour:
   imageList: []
   playerImageList: []
   enemyImageList: []
-  buttonList: []
 --- !u!1 &463589438
 GameObject:
   m_ObjectHideFlags: 0
