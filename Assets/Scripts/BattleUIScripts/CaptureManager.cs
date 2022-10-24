@@ -19,8 +19,6 @@ public class CaptureManager : MonoBehaviour
     public List<ARTrackedImage> playerImageList = new List<ARTrackedImage>();
     public List<ARTrackedImage> enemyImageList = new List<ARTrackedImage>();
 
-    public List<Button> buttonList = new List<Button>();
-
     private void Start()
     {
         multiMarker = GetComponent<MultiMarker>();
@@ -29,7 +27,10 @@ public class CaptureManager : MonoBehaviour
 
     public void PlayerCaptureEnd(bool selected)
     {
-        selected = true ? playerCapture = true : playerCapture = false;
+        if (selected)
+            playerCapture = true;
+        else
+            playerCapture = false;
         multiMarker.canCapture = true;
     }
 
@@ -52,8 +53,9 @@ public class CaptureManager : MonoBehaviour
 
         if (playerCapture == true)
             playerSelectText.text = "Do you want another capturing PokeSeal??";
-        else
+        else if (playerCapture == false && enemyImageList.Count != 0) 
         {
+            playerSelectText.text = "";
             canvasUI[1].SetActive(false);
             BattleSelectUIActive();
         }

@@ -6,15 +6,21 @@ using UnityEngine.UI;
 public class PokemonSelectButton : MonoBehaviour
 {
     public List<NewPokemon> newPokemons;
-    public CaptureManager captureManager;
     public List<Button> buttons;
+
+    public CaptureManager captureManager;
+
+    private void Awake()
+    {
+        PokemonLoad();
+    }
 
     public void PokemonLoad()
     {
         //리소스와 같은 친구들을 비교하고 소환하기
         foreach (var item in captureManager.playerImageList)
         {
-            GameObject loadingObj = (GameObject)Resources.Load(item.name);
+            GameObject loadingObj = (Resources.Load<GameObject>(item.name));
             newPokemons.Add(loadingObj.GetComponent<NewPokemon>());
         }
 

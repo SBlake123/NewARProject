@@ -54,7 +54,7 @@ public class MultiMarker : MonoBehaviour
 
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
-        var list = args.updated;
+        var list = args.added;
         for (int i = 0; i < list.Count; i++)
         {
             ARTrackedImage marker = list[i];
