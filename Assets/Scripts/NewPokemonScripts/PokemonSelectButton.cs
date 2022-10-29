@@ -7,10 +7,12 @@ public class PokemonSelectButton : MonoBehaviour
 {
     public List<NewPokemon> newPokemons;
     public List<Button> buttons;
+    public List<Text> texts;
+    public List<Image> images;
 
     public CaptureManager captureManager;
 
-    private void Awake()
+    private void Start()
     {
         PokemonLoad();
     }
@@ -28,13 +30,18 @@ public class PokemonSelectButton : MonoBehaviour
         {
             if (newPokemons[i] is NewMewtwo)
             {
-                buttons[i].GetComponentInChildren<Text>().text = ((NewMewtwo)newPokemons[i]).pokeName;
-                buttons[i].GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(($"Images.{((NewMewtwo)newPokemons[i]).pokeName.ToUpper()}"));
+                texts[i].text = ((NewMewtwo)newPokemons[i]).pokeName;
+                images[i].sprite = Resources.Load<Sprite>(($"Images.{((NewMewtwo)newPokemons[i]).pokeName.ToUpper()}"));
             }
             else if (newPokemons[i] is NewPikachu)
             {
-                buttons[i].GetComponentInChildren<Text>().text = ((NewPikachu)newPokemons[i]).pokeName;
-                buttons[i].GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>(($"Images.{((NewPikachu)newPokemons[i]).pokeName.ToUpper()}"));
+                texts[i].text = ((NewPikachu)newPokemons[i]).pokeName;
+                images[i].sprite = Resources.Load<Sprite>(($"Images.{((NewPikachu)newPokemons[i]).pokeName.ToUpper()}"));
+            }
+
+            if (newPokemons == null)
+            {
+                texts[0].text = "null";
             }
         }
     }

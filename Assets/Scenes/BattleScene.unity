@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &37599069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -316,6 +316,16 @@ MonoBehaviour:
   - {fileID: 1088665582}
   - {fileID: 2123618880}
   - {fileID: 1741873166}
+  texts:
+  - {fileID: 2081219050}
+  - {fileID: 1028351425}
+  - {fileID: 93492680}
+  - {fileID: 850280629}
+  images:
+  - {fileID: 867115353}
+  - {fileID: 581150796}
+  - {fileID: 553189859}
+  - {fileID: 2105787393}
   captureManager: {fileID: 433475159}
 --- !u!1 &49339959
 GameObject:

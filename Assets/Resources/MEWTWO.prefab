@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7222566631317715054}
   - component: {fileID: 1812294034099560286}
   - component: {fileID: 7602229641741227904}
+  - component: {fileID: -5302299366784610736}
   m_Layer: 0
   m_Name: MEWTWO
   m_TagString: Untagged
@@ -157,3 +158,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-5302299366784610736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477568186626455335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896207e0aed9fa34ea344cfa56ce7a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
