@@ -1,0 +1,2 @@
+40f43be261f04ccd995284dfef120121|E:\UnityGitHub\NewPokemonARProject\Assets\Images\Mewtwo2.png|1
+da7585aa07ab4f8fac4858566a0f78cb|E:\UnityGitHub\NewPokemonARProject\Assets\Images\Pikachu2.jpg|1

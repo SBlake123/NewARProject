@@ -274,7 +274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &37599069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1531,6 +1531,7 @@ GameObject:
   - component: {fileID: 433475158}
   - component: {fileID: 433475154}
   - component: {fileID: 433475159}
+  - component: {fileID: 433475160}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -1629,9 +1630,39 @@ MonoBehaviour:
   - {fileID: 37599068}
   playerSelectText: {fileID: 583786784}
   multiMarker: {fileID: 0}
+  pSButton: {fileID: 0}
   imageList: []
   playerImageList: []
   enemyImageList: []
+--- !u!114 &433475160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433475153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b13b89ec2ecbff40ac412ae05143af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPokemons: []
+  buttons:
+  - {fileID: 501293400}
+  - {fileID: 1088665582}
+  - {fileID: 2123618880}
+  - {fileID: 1741873166}
+  texts:
+  - {fileID: 2081219050}
+  - {fileID: 1028351425}
+  - {fileID: 93492680}
+  - {fileID: 850280629}
+  images:
+  - {fileID: 867115353}
+  - {fileID: 581150796}
+  - {fileID: 553189859}
+  - {fileID: 2105787393}
+  captureManager: {fileID: 433475159}
 --- !u!1 &463589438
 GameObject:
   m_ObjectHideFlags: 0

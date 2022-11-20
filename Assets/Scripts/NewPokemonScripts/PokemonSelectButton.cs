@@ -26,7 +26,7 @@ public class PokemonSelectButton : MonoBehaviour
             newPokemons.Add(loadingObj.GetComponent<NewPokemon>());
         }
 
-        for(int i = 0; i < newPokemons.Count; i++)
+        for(int i = 0; i < 4; i++)
         {
             if (newPokemons[i] is NewMewtwo)
             {
@@ -39,9 +39,9 @@ public class PokemonSelectButton : MonoBehaviour
                 images[i].sprite = Resources.Load<Sprite>(($"Images.{((NewPikachu)newPokemons[i]).pokeName.ToUpper()}"));
             }
 
-            if (newPokemons == null)
+            if (newPokemons.Count != 0)
             {
-                texts[0].text = "null";
+                texts[0].text = "hi";
             }
         }
     }

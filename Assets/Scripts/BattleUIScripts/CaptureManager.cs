@@ -14,6 +14,7 @@ public class CaptureManager : MonoBehaviour
     public TextMeshProUGUI playerSelectText;
 
     public MultiMarker multiMarker;
+    public PokemonSelectButton pSButton;
 
     public List<ARTrackedImage> imageList = new List<ARTrackedImage>();
     public List<ARTrackedImage> playerImageList = new List<ARTrackedImage>();
@@ -22,6 +23,7 @@ public class CaptureManager : MonoBehaviour
     private void Start()
     {
         multiMarker = GetComponent<MultiMarker>();
+        pSButton = GetComponent<PokemonSelectButton>();
         canvasUI[0].SetActive(true);
     }
 
@@ -64,6 +66,7 @@ public class CaptureManager : MonoBehaviour
     private void BattleSelectUIActive()
     {
         canvasUI[2].SetActive(true);
+        pSButton.PokemonLoad();
     }
     
 }
